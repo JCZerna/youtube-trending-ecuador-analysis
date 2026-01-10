@@ -1,40 +1,52 @@
 # 📊 YouTube Content Strategy Dashboard (Ecuador Market)
 
+## 🖼️ Dashboard Preview
+![YouTube Strategy Dashboard](YouTube_Strategy_Dashboard.JPG)
+
 ## 📋 Project Overview
-The purpose of this Power BI dashboard is to give Ecuadorian content producers useful information. The program determines the **"Golden Hour"** for publishing and the ideal video duration to optimize audience interaction by examining engagement rates across various categories and times.
+This project provides a data-driven framework for content creators in the Ecuadorian market to optimize their reach. By analyzing trending YouTube data, the dashboard identifies the **"Golden Hour"** for publishing and the ideal video duration to maximize audience engagement across different niches.
 
 ---
 
-## 🛠️ Data Engineering Workflow (The "Under the Hood" Part)
-> **Note:** This project uses a hybrid approach, combining Power BI's visualization capabilities with R's statistical power.
+## 🛠️ Data Engineering Workflow
+> **Technical Note:** This project utilizes a hybrid architecture, leveraging **R** for heavy data lifting and **Power BI** for high-impact visualization.
 
-### 1) ETL with RStudio Wrangling:
-* The raw YouTube metadata was cleaned using **R**.
-* To classify video lengths, the `duration_range` buckets were designed.
-* Temporal data was formatted to enable hourly engagement mapping.
+### 1. ETL & Data Wrangling (RStudio)
+* **Pre-processing:** Cleaned raw YouTube metadata using **R**, handling missing values and data type normalization.
+* **Feature Engineering:** Developed `duration_range` bins to transform continuous time data into categorical "buckets" for better trend analysis.
+* **Temporal Logic:** Formatted timestamps to enable accurate hourly mapping for the strategy heatmap.
 
-### 2) Power BI Visualization:
-* The cleaned R-output was connected for the UI design and final modeling.
+### 2. Data Modeling & UI (Power BI)
+* **DAX Implementation:** Created custom measures for **Average Engagement Rate** and **Peak Strategy Hour**.
+* **Semantic Design:** Developed a high-contrast, dark-themed UI designed for executive decision-making.
 
 ---
 
 ## 💡 Key Strategic Insights
-* **The "Golden Hour":** 9:00 PM was determined to be the peak strategy hour for overall engagement by custom DAX research.
-* **The 10-20 Min Sweet Spot:** Although many producers concentrate on short-form content, the data shows that when videos are between **10 and 20 minutes** long, there is a notable increase in interaction (almost **15%**) for comedic content.
-* **Category Outliers:** Regardless of the overall volume of videos, comedy and gaming routinely beat established categories in terms of engagement.
+* **The "Golden Hour":** Strategic analysis identifies **9:00 PM** as the peak engagement window for the general Ecuadorian audience.
+* **The 10-20 Min Sweet Spot:** Data reveals a significant engagement spike (reaching **~15%**) for **Comedy** content specifically when videos are between 10 and 20 minutes long.
+* **Category Performance:** While **Music** and **Entertainment** have high volume, **Comedy** and **Gaming** show higher relative engagement per view.
 
 ---
 
 ## ⚙️ Technical Features
-* **Dynamic KPIs:** DAX metrics were used to determine "Peak Strategy Hour" and "Average Engagement %."
-* **Advanced Interactivity:** Provides a temporal heatmap to compare performance by hour and niche, as well as a multi-select category slicer.
-* **Visual Optimization:** High-performing outliers like Comedy were highlighted using a high-contrast category color scheme (**Semantic Resonance**).
-* **Data Cleaning:** To make trend analysis cleaner, raw YouTube metadata was converted into binned duration ranges.
+* **Multi-Select Filtering:** Integrated slicers allow for side-by-side comparison of specific content niches.
+* **Heatmap Analysis:** A temporal matrix that visualizes audience "availability" patterns throughout the 24-hour cycle.
+* **Categorical Color Strategy:** Used high-contrast colors to distinguish content types:
+    * 🟡 **Comedy** (Yellow) - Top Performer
+    * 💗 **Music** (Pink)
+    * 🟣 **Gaming** (Purple)
+    * 🟢 **Howto & Style** (Green)
+    * ⚪ **Autos & Vehicles** (Grey)
 
 ---
 
-## 🎨 Data Storytelling
-The dashboard has a deliberate, modern dark theme:
-* **Top Ribbon:** High-level KPIs for quick "at-a-glance" decisions.
-* **Heatmap:** Shows trends of audience "availability" over the course of the day.
-* **Performance Chart:** A clustered column chart that compares the length of videos in five major areas to ascertain production strategy.
+## 📂 Repository Structure
+* `youtube-strategy-dashboard.pbix`: The primary Power BI report file.
+* `youtube-data-cleaning.R`: The R script used for the ETL and data transformation process.
+* `YouTube_Strategy_Dashboard.JPG`: High-resolution preview of the final dashboard.
+
+## 🚀 How to Use
+1. Clone the repository.
+2. Run the `youtube-data-cleaning.R` script in RStudio to see the data transformation.
+3. Open `youtube-strategy-dashboard.pbix` in Power BI Desktop to interact with the findings.
