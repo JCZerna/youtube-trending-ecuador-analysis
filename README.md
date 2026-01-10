@@ -23,30 +23,35 @@ This project provides a data-driven framework for content creators in the Ecuado
 ---
 
 ## 💡 Key Strategic Insights
-* **The "Golden Hour":** Strategic analysis identifies **9:00 PM** as the peak engagement window for the general Ecuadorian audience.
+* **Market Engagement Benchmark (6.04%):** Across the top-performing niches in Ecuador, the average engagement rate sits at 6.04%, indicating a highly interactive audience compared to global averages.
+* **The "Golden Hour":** Statistical analysis identifies **9:00 PM** as the peak engagement window for the Ecuadorian audience.
 * **The 10-20 Min Sweet Spot:** Data reveals a significant engagement spike (reaching **~15%**) for **Comedy** content specifically when videos are between 10 and 20 minutes long.
-* **Category Performance:** While **Music** and **Entertainment** have high volume, **Comedy** and **Gaming** show higher relative engagement per view.
+
+---
+
+## 🎯 Contextual Analysis: Top-Performing Cohort
+The current dashboard view and KPI results focus on a multi-select filter of the **Top 5 High-Reach Categories** in the Ecuadorian ecosystem:
+* 🟡 **Comedy** (Top Performer)
+* ⚪ **Autos & Vehicles**
+* 🟢 **Howto & Style**
+* 🟣 **Gaming**
+* 💗 **Music**
+
+By isolating these specific niches, the analysis provides a targeted benchmark, allowing for a more relevant comparison of engagement signals across the most active sectors of the platform.
 
 ---
 
 ## ⚖️ Strategic Nuance: Beyond the Average
-While the **9:00 PM KPI** represents the general market peak in Ecuador, the dashboard is designed to account for **Contextual Variance**:
-
-* **Niche Specificity:** Audience behavior shifts by category. For example, while Entertainment peaks late, "How-to" or "Education" niches often see earlier engagement spikes during active hours.
-* **Temporal Shifts:** Weekend vs. Weekday patterns vary significantly. The integrated Heatmap allows users to identify whether the "Golden Hour" shifts earlier on Saturdays or Sundays.
-* **The "Buffer" Rule:** Data suggests that for a 9:00 PM engagement peak, the optimal upload time is actually **7:00 PM - 8:00 PM** to allow for platform indexing and algorithmic momentum.
+While the **9:00 PM KPI** represents the general peak, the dashboard is designed to account for **Contextual Variance**:
+* **Niche Specificity:** Audience behavior shifts by category. While Entertainment peaks late, "How-to" or "Education" niches often see earlier spikes.
+* **The "Buffer" Rule:** To hit a 9:00 PM engagement peak, the optimal upload time is suggested between **7:00 PM - 8:00 PM** to allow for platform indexing and algorithmic momentum.
 
 ---
 
 ## ⚙️ Technical Features
 * **Multi-Select Filtering:** Integrated slicers allow for side-by-side comparison of specific content niches.
 * **Heatmap Analysis:** A temporal matrix that visualizes audience "availability" patterns throughout the 24-hour cycle.
-* **Categorical Color Strategy:** Used high-contrast colors to distinguish content types:
-    * 🟡 **Comedy** (Yellow) - Top Performer
-    * 💗 **Music** (Pink)
-    * 🟣 **Gaming** (Purple)
-    * 🟢 **Howto & Style** (Green)
-    * ⚪ **Autos & Vehicles** (Grey)
+* **Interactive KPIs:** Dynamic cards that update real-time metrics based on selected categories and timeframes.
 
 ---
 
