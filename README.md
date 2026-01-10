@@ -29,6 +29,15 @@ This project provides a data-driven framework for content creators in the Ecuado
 
 ---
 
+## ⚖️ Strategic Nuance: Beyond the Average
+While the **9:00 PM KPI** represents the general market peak in Ecuador, the dashboard is designed to account for **Contextual Variance**:
+
+* **Niche Specificity:** Audience behavior shifts by category. For example, while Entertainment peaks late, "How-to" or "Education" niches often see earlier engagement spikes during active hours.
+* **Temporal Shifts:** Weekend vs. Weekday patterns vary significantly. The integrated Heatmap allows users to identify whether the "Golden Hour" shifts earlier on Saturdays or Sundays.
+* **The "Buffer" Rule:** Data suggests that for a 9:00 PM engagement peak, the optimal upload time is actually **7:00 PM - 8:00 PM** to allow for platform indexing and algorithmic momentum.
+
+---
+
 ## ⚙️ Technical Features
 * **Multi-Select Filtering:** Integrated slicers allow for side-by-side comparison of specific content niches.
 * **Heatmap Analysis:** A temporal matrix that visualizes audience "availability" patterns throughout the 24-hour cycle.
