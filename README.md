@@ -1,7 +1,7 @@
 # 📊 YouTube Content Strategy Dashboard (Ecuador Market)
 
 ## 🖼️ Dashboard Preview
-![YouTube Strategy Dashboard](R_Model_Development/YouTube_Strategy_Dashboard.JPG)
+![YouTube Strategy Dashboard](YouTube_Strategy_Dashboard.JPG)
 
 ## 📋 Project Overview
 This project provides a data-driven framework for content creators in the Ecuadorian market to optimize their reach. By analyzing trending YouTube data, the dashboard identifies the **"Golden Hour"** for publishing and the ideal video duration to maximize audience engagement across different niches.
