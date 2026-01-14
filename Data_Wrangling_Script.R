@@ -38,6 +38,8 @@ category_mapping <- c(
 
 tYtvideos$category_name <- category_mapping[as.character(tYtvideos$category_id)]
 
+tYtvideos$category_name[is.na(tYtvideos$category_name)] <- "Other"
+
 # 6. Data Cleaning (Creating newdata1)
 # Removing rows with 0 views/likes/comments and duration formatting
 newdata1 <- tYtvideos %>%
