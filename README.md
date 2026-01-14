@@ -8,17 +8,17 @@ This project provides a data-driven framework for content creators in the Ecuado
 
 ---
 
-## 🛠️ Data Engineering Workflow
-> **Technical Note:** This project utilizes a hybrid architecture, leveraging **R** for heavy data lifting and **Power BI** for high-impact visualization.
+## 🛠️ Hybrid Data Pipeline
+This project utilizes a **R + Power BI architecture** to ensure scalability and statistical rigor.
 
-### 1. ETL & Data Wrangling (RStudio)
-* **Pre-processing:** Cleaned raw YouTube metadata using **R**, handling missing values and data type normalization.
-* **Feature Engineering:** Developed `duration_range` bins to transform continuous time data into categorical "buckets" for better trend analysis.
-* **Temporal Logic:** Formatted timestamps to enable accurate hourly mapping for the strategy heatmap.
+### 1. Advanced ETL & Wrangling (RStudio)
+* **Statistical Profiling:** Conducted **Spearman Rank Correlation** analysis to identify non-linear relationships between publish time and engagement, ensuring resilience against viral outliers.
+* **Categorical Mapping:** Automated the conversion of `category_id` (JSON metadata) into human-readable dimensions to optimize Power BI's model performance.
+* **Feature Engineering:** Engineered a `duration_range` feature using custom bins to identify the "Sweet Spot" for audience retention.
 
-### 2. Data Modeling & UI (Power BI)
-* **DAX Implementation:** Created custom measures for **Average Engagement Rate** and **Peak Strategy Hour**.
-* **Semantic Design:** Developed a high-contrast, dark-themed UI designed for executive decision-making.
+### 2. Strategic Modeling (Power BI)
+* **Engagement Benchmarking:** Developed DAX measures to compare the **Ecuador Market average (6.04%)** against global benchmarks.
+* **Temporal Strategy Heatmap:** Built a matrix visual to pinpoint the "Golden Hour" (9:00 PM), providing a predictive guide for content scheduling.
 
 ---
 
